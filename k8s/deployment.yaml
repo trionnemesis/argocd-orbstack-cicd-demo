@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-orbstack-cicd-demo
+  labels:
+    app: argocd-orbstack-cicd-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: argocd-orbstack-cicd-demo
+  template:
+    metadata:
+      labels:
+        app: argocd-orbstack-cicd-demo
+    spec:
+      containers:
+        - name: web
+          image: nginx:1.27-alpine
+          ports:
+            - containerPort: 80
