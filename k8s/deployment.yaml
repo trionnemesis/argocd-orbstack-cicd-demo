@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: web
-          image: nginx:1.27-alpine
+          image: ghcr.io/trionnemesis/argocd-orbstack-cicd-demo:11d47fc4d3915e1b75c895faf9224b44721a4384
           ports:
             - containerPort: 80
