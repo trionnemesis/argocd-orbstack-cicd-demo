@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: web
-          image: ghcr.io/trionnemesis/argocd-orbstack-cicd-demo:11d47fc4d3915e1b75c895faf9224b44721a4384
+          image: ghcr.io/trionnemesis/argocd-orbstack-cicd-demo:82ff34321e5297df8d3e07d9855d806a94990255
           ports:
             - containerPort: 80
